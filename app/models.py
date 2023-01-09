@@ -51,3 +51,19 @@ class Project(Model):
 
     def __repr__(self):
         return self.name	
+    
+class Dealer(Model):
+    id = Column(String(7), primary_key=True, default=project_code_generator)
+    
+class Round(Model):
+    id = Column(String(6), primary_key=True, default=project_code_generator)
+    
+class Questionnaire(Model):
+    id = Column(String(10), primary_key=True, default=project_code_generator)
+    
+class Audit(Model):
+    id = Column(String(7), primary_key=True, default=project_code_generator)
+    
+class Auditor(Model):
+    id = Column(String(5), primary_key=True, default=project_code_generator)
+    
